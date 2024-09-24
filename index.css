@@ -1,0 +1,973 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lexend:wght@100..900&display=swap');
+
+/*Estilo da página */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+    font-family: "Lexend", sans-serif;
+}
+
+/*Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: #E61484;
+}
+
+/*Scroll por clique */
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1.título {
+    color: #292D29;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+h1.título span {
+    color: #E61484;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+h2.subtítulo {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.body {
+    margin-top: 200px;
+    color: white;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+/*Estilo das seções */
+
+.container {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 4%;
+}
+
+.container-home {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 4%;
+}
+
+.container-skills {
+    max-width: 1536px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 4%;           
+}
+
+.container-sobre {
+    max-width: 1536px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 4%;
+}
+
+.container-trabalhos {
+    max-width: 1536px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 4%;  
+}
+
+.container-footer {
+    max-width: 1536px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 4%;     
+}
+
+/*Estilo do cabeçalho */
+
+header {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 0;
+    height: 100px;
+    position: fixed;
+    justify-content: center;
+    box-shadow: #0000002d 0px 0.5px;
+    z-index: 10;
+}
+
+.Menu {
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+}
+
+.Menu nav a:hover {
+    color: #000000;
+    font-weight: 400;
+}
+
+.Menu nav a {
+    font-size: 14px;
+    font-weight: 300;
+    width: 100%;
+    color: rgb(163, 163, 163);
+    text-decoration: none;
+    padding-right: 50px;
+    position: relative;
+}
+
+.Menu nav a::after {
+    content: " ";
+    width: 0%;
+    height: 4px;
+    background-color: #E61484;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    transition: width 0.5s ease-in-out;
+    border-radius: 8px;
+}
+
+.Menu nav a:hover::after {
+    width: 60%;
+}
+
+/*Estilo dos botões */
+
+.Botão button {
+    width: 300px;
+    height: 56px;
+    background-color: #E61484;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Botão button:hover {
+    transform: scale(1.02);
+    border-color: #E61484;
+    border-style: outset;
+    background-color: rgba(255, 255, 255, 0);
+    color: #E61484;
+    transition: .3s ease-in-out;
+}
+
+/*Estilo dos botões rede social */
+
+.Social button {
+    width: 40px;
+    height: 40px;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Social button:hover {
+    transform: scale(1.08);
+    color: #E61484;
+    transition: .3s ease-in-out;
+}
+
+/*Estilo da home */
+
+.Home .pílulas {
+    width: fit-content;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292d2998;
+    padding: 6px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Home .pílulas span {
+    color: #292d2998;
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.Home {
+    max-width: 1080;
+    margin: 0 auto;
+    display: flexbox;
+    align-items: center;
+    justify-content: left;
+    padding: 20px 4%;
+    padding-top: 140px;
+}
+
+section.Home .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 12%;
+}
+
+.Home h1 {
+    color: #292D29;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+/*Animação de texto da home */
+
+.Home h1 span {
+    color: #E61484;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+}
+
+.Home h1 span {
+    position: relative;
+}
+
+.Home h1 span::before {
+    content: "";
+    color: #E61484;
+    animation: Profissão 20s infinite;
+}
+
+.Home h1 span::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    border-left: 2px solid #E61484;
+    right: -10px;
+    animation: Digitação .7s infinite, Revelação 20s steps(15) infinite;
+    width: calc(100% + 12px);
+    background-color: rgb(255, 255, 255);
+}
+
+@keyframes Revelação {
+    10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% {
+        width: 0;   
+    }
+    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% {
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes Digitação {
+    0% {
+        border-left: 2px solid rgb(255, 255, 255);
+    }
+}
+
+@keyframes Profissão {
+    0%,20% {
+        content: "Crio marcas";
+    }
+    21%,40% {
+        content: "Edito vídeos";
+    }
+    41%,60% {
+        content: "Tomo café";
+    }
+    61%,80% {
+        content: "Faço animações";
+    }
+    81%,100% {
+        content: "Sou Ui Designer";
+    }
+}
+
+.Home h2 {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.Home p {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 200;
+    color: #292d29ad;
+}
+
+.Home .texto-home p {
+    margin: 40px 0;
+}
+
+/*Estilo do botão */
+
+.Botão-home button {
+    width: 300px;
+    height: 56px;
+    background-color: #E61484;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    border: 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.Botão-home button:hover {
+    transform: scale(1.02);
+    border-color: #E61484;
+    border-style: outset;
+    background-color: rgba(255, 255, 255, 0);
+    color: #E61484;
+    transition: .3s ease-in-out;
+}
+
+/*Animação da foto */
+
+.Home .img-foto-home img {
+    position: relative;
+    animation: Flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes Flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}
+
+/*Estilo do portfólio */
+
+.Trabalhos .pílulas {
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292d2998;
+    padding: 6px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Trabalhos .pílulas span {
+    color: #292d2998;
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+section.Trabalhos {
+    justify-content: center;
+    align-items: center;
+}
+
+section.Trabalhos .texto-trabalhos {
+    text-align: center;
+}
+
+section.Trabalhos .texto-trabalhos h2 {
+    margin-top: 80px;
+}
+
+section.Trabalhos p {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+section.Trabalhos .flex {
+    gap: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1536px;
+}
+
+section.Trabalhos .container-container {
+    margin-bottom: 80px;
+}
+
+.img-port {
+    width: 440px;
+    height: 400px;
+    background-color: #E61484;
+    border-radius: 4px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay span {
+    width: auto;
+    margin: 10px 0;
+    border-radius: 40px;
+    background-color: #E61484;
+    align-items: center;
+    padding: 0px 14px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.overlay span {
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*Estilo do skills */
+
+.Skills .pílulas {
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292d2998;
+    padding: 6px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Skills .pílulas span {
+    color: #292d2998;
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+section.Skills {
+    padding: 100px 4%;
+}
+
+section.Skills .flex {
+    gap: 32px;
+    justify-content: space-between;
+}
+
+.Skills .box-skills {
+    background-color: white;
+    padding: 32px;
+    color: #292D29;
+    border: 2px solid #292D29;
+    margin-top: 40px;
+    border-radius: 4px;
+    transition: .2s;
+    text-align: left;
+    width: 24%;
+}
+
+.Skills .box-skills:hover {
+    transform: scale(1.05);
+}
+
+.Skills .box-skills h3 {
+    color: #E61484;
+    font-size: 32px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+    margin: 24px 0;
+}
+
+.Skills .box-skills p {
+    color: #292D29;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+/*Estilo do sobre */
+
+.Sobre {
+    padding: 100px;
+}
+
+.Sobre .flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Sobre .txt-sobre h1 {
+    color: #E61484;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 80%;
+}
+
+.Sobre .txt-sobre h1 span {
+    color: #E61484;
+    font-size: 64px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+    display: block;
+}
+
+.Sobre .pílulas {
+    margin: 10px auto;
+    width: auto;
+    margin: 10px 0;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292D29;
+    align-items: center;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Sobre .pílulas span {
+    color: #292D29;
+    font-size: 18px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.Sobre .txt-sobre p {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.2em;
+    max-width: 72%;
+}
+
+.Sobre .txt-sobre {
+   width: 55%;
+}
+
+/*Estilo das pílulas */
+
+.qualidades1 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 24px;
+    justify-content: flex-start;
+    width: auto;
+    gap: 16px;
+}
+
+.qualidades2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 0px;
+    justify-content: flex-start;
+    width: auto;
+    gap: 16px;
+}
+
+.pílulas {
+    width: auto;
+    margin: 10px 0;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292D29;
+    align-items: center;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.pílulas span {
+    color: #292D29;
+    font-size: 18px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.pílulas img {
+    margin-right: 10px;
+}
+
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: #E61484;
+    border-radius: 4px;
+}
+
+.qualidades h1 {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    height: 20px;
+}
+
+/*Estilo footer */
+
+.texto-footer {
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-footer .pílulas {
+    margin: 10px auto;
+    width: fit-content;
+    border-radius: 40px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #292d2998;
+    padding: 6px 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.texto-footer .pílulas span {
+    color: #292d2998;
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+}
+
+.texto-footer h2 {
+    color: #009EEF;
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.texto-footer h1 {
+    color: #292D29;
+    font-size: 48px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.texto-footer h1 span {
+    color: #E61484;
+    font-size: 48px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.texto-footer p {
+    font-size: 20px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    margin: 20px 0;
+    line-height: 1.2em;
+    margin-bottom: 56px;
+}
+
+.container-footer .flex .Social {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+    padding: 40px;
+}
+
+.container-footer .texto-direitos {
+    margin-top: 40px;
+}
+
+.texto-direitos h1 {
+    color: #292D29;
+    font-size: 16px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 800;
+    line-height: 110%;
+    margin: 24px 0;
+}
+
+.texto-direitos p {
+    font-size: 12px;
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-bottom: 80px;
+    color: #292d2971;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 1020px) {
+    /* Classes gerais */
+    .flex {
+        flex-direction: column;
+    }
+
+    .container-home .flex {
+        flex-direction: column-reverse;
+    }
+
+    /* Home */
+
+    .container-home {
+        padding: 20px 8%;
+    }
+
+    .Menu {
+        display: flex;
+        font-size: 10px;
+        font-weight: 400;
+        width: 100%;
+        padding-top: 25px;
+    }
+
+    .Botão-home {
+        display: none;
+    }
+
+    .Home h1 span {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    .Home h1 {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+    
+    .Home p {
+        font-size: 22px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        color: #292d29;
+        text-align: center;
+    }
+
+    .texto-home .pílulas {
+        font-size: 20px;
+        line-height: 110%;
+        text-align: center;
+        width: auto;
+        width: fit-content;
+        margin: 10px auto;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .texto-home .Botão {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .img-foto-home img {
+        width: 100%;
+        padding-bottom: 64px;
+    }
+
+    /* Trabalhos */
+
+    .container-skills {
+        padding: 20px 8%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-trabalhos h1 span {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    .texto-trabalhos h1 {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+    
+    .texto-trabalhos p {
+        font-size: 22px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        color: #292d29;
+        text-align: center;
+    }
+
+    /* Skills */
+
+    .container-skills {
+        padding: 20px 8%;
+    }
+
+    .container-skills h1 span {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    .container-skills h1 {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+    
+    .container-skills p {
+        font-size: 22px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        color: #292d29;
+        text-align: center;
+    }
+
+    section.Skills .flex {
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .Skills .box-skills {
+        background-color: white;
+        padding: 24px;
+        color: #292D29;
+        border: 2px solid #292D29;
+        margin-top: 40px;
+        border-radius: 4px;
+        transition: .2s;
+        text-align: left;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .Skills .box-skills:hover {
+        transform: scale(1.05);
+    }
+    
+    .Skills .box-skills h3 {
+        color: #E61484;
+        font-size: 40px;
+        font-family: "Chakra Petch", sans-serif;
+        font-weight: 800;
+        line-height: 110%;
+        margin: 24px 0;
+        text-align: center;
+    }
+    
+    .Skills .box-skills p {
+        color: #292D29;
+        font-size: 20px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+    }
+
+    /* Sobre */
+
+    .container-sobre {
+        padding: 20px 8%;
+        width: 100%;
+    }
+
+    .txt-sobre h1 span {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+
+    .txt-sobre h1 {
+        font-size: 48px;
+        line-height: 110%;
+        text-align: center;
+    }
+    
+    .txt-sobre p {
+        font-size: 22px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 300;
+        color: #292d29;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Footer */
+
+    .container-footer {
+        padding: 20px 8%;
+    }
+}
