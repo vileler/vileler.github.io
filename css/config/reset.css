@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #e61484;
+}
+
+html {
+    font-size: 1rem;
+    font-family: "Lexend", sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1rem;
+}

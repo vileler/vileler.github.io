@@ -1,43 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lexend:wght@100..900&display=swap");
-
-/* === RESET === */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Lexend", sans-serif;
-}
-
-/* === SCROLLBAR === */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #e61484;
-}
-
-/* === BASE === */
-
-html {
-    scroll-behavior: smooth;
-}
+@import "config/reset.css";
+@import "config/typography.css";
 
 h1.titulo {
     color: #292d29;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
 }
 
 h1.titulo span {
     color: #e61484;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
 }
 
@@ -129,7 +105,7 @@ header {
 .nav-menu a {
     display: block;
     padding: 10px 0;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #292d29;
     text-decoration: none;
@@ -156,7 +132,7 @@ header {
     height: 56px;
     background-color: #e61484;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
     border: 2px solid transparent;
@@ -201,7 +177,7 @@ header {
 
 .pilulas span {
     color: #292d2998;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
 }
@@ -215,7 +191,7 @@ header {
 
 .qualidades .pilulas span {
     color: #292d29;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .qualidades .pilulas img {
@@ -243,18 +219,18 @@ section.home .flex {
 
 section.home h1 {
     color: #292d29;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     text-align: center;
 }
 
 section.home h1 span {
     color: #e61484;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     text-align: center;
     position: relative;
 }
@@ -279,7 +255,7 @@ section.home h1 span::after {
 }
 
 section.home p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Lexend", sans-serif;
     font-weight: 200;
     color: #292d29ad;
@@ -377,15 +353,15 @@ section.trabalhos {
 }
 
 .texto-trabalhos h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     text-align: center;
 }
 
 section.trabalhos p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     margin: 20px 0;
@@ -430,9 +406,9 @@ section.trabalhos p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     color: #fff;
     opacity: 0;
@@ -440,7 +416,7 @@ section.trabalhos p {
 }
 
 .overlay span {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     margin: 10px 0;
@@ -470,13 +446,13 @@ section.skills .flex {
 
 .skills .container h1,
 .skills .container h1 span {
-    font-size: 48px;
+    font-size: 3rem;
     line-height: 110%;
     text-align: center;
 }
 
 .skills .container p {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     color: #292d29;
@@ -500,16 +476,16 @@ section.skills .flex {
 
 .box-skills h3 {
     color: #e61484;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     margin: 24px 0;
     text-align: center;
 }
 
 .box-skills p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     color: #292d29;
@@ -533,24 +509,24 @@ section.sobre .flex {
 
 .txt-sobre h1 {
     color: #e61484;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 80%;
     text-align: center;
 }
 
 .txt-sobre h1 span {
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     display: block;
     text-align: center;
 }
 
 .txt-sobre p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     margin: 20px 0;
@@ -590,22 +566,22 @@ section.sobre .flex {
 
 .texto-footer h1 {
     color: #292d29;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
 }
 
 .texto-footer h1 span {
     color: #e61484;
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
 }
 
 .texto-footer p {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     margin: 20px 0 56px;
@@ -625,15 +601,15 @@ section.sobre .flex {
 
 .texto-direitos h1 {
     color: #292d29;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Chakra Petch", sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     line-height: 110%;
     margin: 24px 0;
 }
 
 .texto-direitos p {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
     line-height: 1.2em;
@@ -677,7 +653,7 @@ section.sobre .flex {
     }
 
     .nav-menu a {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-weight: 300;
         color: rgb(163, 163, 163);
         padding: 0 50px 0 0;
@@ -708,7 +684,7 @@ section.sobre .flex {
 
     h1.titulo,
     h1.titulo span {
-        font-size: 56px;
+        font-size: 3.5rem;
     }
 
     section.home .flex {
@@ -717,7 +693,7 @@ section.sobre .flex {
 
     section.home h1,
     section.home h1 span {
-        font-size: 56px;
+        font-size: 3.5rem;
     }
 
     section.home p {
@@ -749,23 +725,8 @@ section.sobre .flex {
         width: 48%;
     }
 
-    section.sobre .flex {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
     .txt-sobre {
         width: 55%;
-    }
-
-    .txt-sobre p {
-        max-width: 72%;
-        text-align: left;
-    }
-
-    .txt-sobre h1,
-    .txt-sobre h1 span {
-        text-align: left;
     }
 
     .img-sobre {
@@ -784,12 +745,12 @@ section.sobre .flex {
 
     h1.titulo,
     h1.titulo span {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     section.home h1,
     section.home h1 span {
-        font-size: 64px;
+        font-size: 4rem;
         text-align: left;
     }
 
@@ -798,7 +759,7 @@ section.sobre .flex {
     }
 
     .texto-trabalhos h1 {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     .behance-projects {
@@ -815,7 +776,7 @@ section.sobre .flex {
 
     .skills .container h1,
     .skills .container h1 span {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     .box-skills {
@@ -824,21 +785,28 @@ section.sobre .flex {
     }
 
     .box-skills h3 {
-        font-size: 32px;
+        font-size: 2rem;
         text-align: left;
     }
 
-    section.sobre {
-        padding: 100px;
+    section.sobre .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .txt-sobre p {
+        max-width: 90%;
+        text-align: left;
     }
 
     .txt-sobre h1,
     .txt-sobre h1 span {
-        font-size: 64px;
+        font-size: 4rem;
+        text-align: left;
     }
 
     .texto-footer h1,
     .texto-footer h1 span {
-        font-size: 48px;
+        font-size: 3rem;
     }
 }
