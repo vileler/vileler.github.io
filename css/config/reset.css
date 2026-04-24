@@ -13,11 +13,12 @@
 }
 
 html {
-    font-size: 1rem;
+    font-size: 100%; /* Default 16px */
     font-family: "Lexend", sans-serif;
     scroll-behavior: smooth;
 }
 
-p {
-    font-size: 1rem;
+img {
+    max-width: 100%;
+    display: block;
 }

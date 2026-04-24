@@ -1,16 +1,13 @@
-/* === SKILLS === */
-
 section.skills {
     text-align: center;
 }
 
-section.skills .container .pill {
-    margin-left: auto;
-    margin-right: auto;
+section.skills .pill {
+    margin-inline: auto;
 }
 
 section.skills .flex {
-    gap: 8px;
+    gap: 16px;
     justify-content: space-between;
 }
 
@@ -33,9 +30,7 @@ section.skills .flex {
 .skill-box h3 {
     color: var(--primary-color);
     font-size: 2.5rem;
-    font-family: "Chakra Petch", sans-serif;
-    font-weight: 700;
-    line-height: 110%;
+    line-height: 1.1;
     margin: 24px 0;
     text-align: center;
 }

@@ -1,5 +1,3 @@
-/* === FOOTER === */
-
 footer {
     padding-top: 3rem;
 }
@@ -9,8 +7,7 @@ footer {
 }
 
 .footer-content .pill {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 .footer-content p {
@@ -37,31 +34,23 @@ footer .flex {
     transition: transform 0.3s ease-in-out;
 }
 
-.social-links a img {
-    width: 100%;
-    height: auto;
-}
-
 .social-links a:hover {
-    transform: scale(1.08);
+    transform: scale(1.1);
 }
 
 .copyright-info {
     margin-top: 2rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .copyright-info .h1-style {
     margin: 1.5rem 0;
 }
 
-.copyright-info p:not(.h1-style) {
+.copyright-info p:not(.hightlight) {
     font-size: 0.75rem;
-    color: #292d2971;
-}
-
-@media (min-width: 768px) {
-}
-
-@media (min-width: 1024px) {
+    color: var(--text-extra-light);
 }

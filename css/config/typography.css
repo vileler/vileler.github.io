@@ -31,3 +31,25 @@ h6 {
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
 }
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--text-muted);
+}
+
+.hightlight {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--text-dark);
+}

@@ -1,12 +1,9 @@
-/* === WORKS === */
-
 section.works {
     text-align: center;
 }
 
 .works-header .pill {
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 .behance-projects {
@@ -20,28 +17,24 @@ section.works {
 
 .portfolio-item {
     width: 100%;
-    min-height: 400px;
+    height: 400px;
     max-width: 440px;
-    max-height: 400px;
     background-color: var(--primary-color);
     border-radius: 4px;
     background-size: cover;
-    background-position: 100% 0%;
+    background-position: top;
     transition: background-position 5s;
     position: relative;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .portfolio-item:hover {
-    background-position: 100% 100%;
+    background-position: bottom;
 }
 
 .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background-color: var(--bg-overlay);
     border-radius: 4px;
     display: flex;
@@ -51,7 +44,7 @@ section.works {
     font-size: 1.75rem;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 700;
-    line-height: 110%;
+    line-height: 1.1;
     color: var(--text-white);
     opacity: 0;
     transition: opacity 0.5s;
@@ -61,13 +54,10 @@ section.works {
     font-size: 1rem;
     font-family: "Lexend", sans-serif;
     font-weight: 300;
-    margin: 10px 0;
-    padding: 0 14px;
+    margin-top: 10px;
+    padding: 4px 14px;
     border-radius: 40px;
     background-color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .overlay:hover {
