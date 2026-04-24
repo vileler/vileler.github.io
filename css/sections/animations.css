@@ -1,0 +1,65 @@
+/* === ANIMATIONS === */
+
+@keyframes reveal {
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95% {
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85% {
+        width: calc(100% + 12px);
+    }
+}
+
+@keyframes typing {
+    0% {
+        border-left: 2px solid var(--text-white);
+    }
+}
+
+@keyframes profession {
+    0%,
+    20% {
+        content: "Crio marcas";
+    }
+    21%,
+    40% {
+        content: "Edito vídeos";
+    }
+    41%,
+    60% {
+        content: "Tomo café";
+    }
+    61%,
+    80% {
+        content: "Faço animações";
+    }
+    81%,
+    100% {
+        content: "Sou Ui Designer";
+    }
+}
+
+@keyframes float {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
+}

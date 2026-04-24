@@ -1,0 +1,67 @@
+/* === FOOTER === */
+
+footer {
+    padding-top: 3rem;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-content .pill {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-content p {
+    margin: 20px 0 56px;
+}
+
+footer .flex {
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 32px;
+    padding: 3rem 0;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a img {
+    width: 100%;
+    height: auto;
+}
+
+.social-links a:hover {
+    transform: scale(1.08);
+}
+
+.copyright-info {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.copyright-info .h1-style {
+    margin: 1.5rem 0;
+}
+
+.copyright-info p:not(.h1-style) {
+    font-size: 0.75rem;
+    color: #292d2971;
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}

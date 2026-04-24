@@ -9,7 +9,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #e61484;
+    background-color: var(--primary-color);
 }
 
 html {

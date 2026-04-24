@@ -1,245 +1,414 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico">
-    <title>Mateus Vilela | Designer</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="favicon.ico" />
+        <title>Mateus Vilela | Designer</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-<body>
-    <header>
-        <div class="header-inner">
-            <details class="nav-trigger">
-                <summary class="nav-toggle" aria-label="Menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </summary>
-            </details>
-            <nav class="nav-menu">
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Trabalhos">Trabalhos</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Sobre">Sobre</a></li>
-                    <li><a href="#Contato">Contato</a></li>
-                </ul>
-            </nav>
-            <div class="botao-home">
-                <button>Vamos conversar!</button>
+    <body>
+        <header class="header">
+            <div class="header-inner">
+                <details class="nav-trigger">
+                    <summary class="nav-toggle" aria-label="Abrir Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </summary>
+                </details>
+                <nav class="nav-menu">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#works">Trabalhos</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <a href="#contact" class="btn">Vamos conversar!</a>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main>
-        <section class="home" id="Home">
-            <div class="container">
-                <div class="flex">
-                    <div class="texto-home">
-                        <div class="pilulas">
-                            <span>Me conheça um pouco mais</span>
+        <main>
+            <section class="home" id="home">
+                <div class="container">
+                    <div class="flex">
+                        <div class="hero-text">
+                            <div class="pill">
+                                <span>Me conheça um pouco mais</span>
+                            </div>
+                            <h1>Oi, sou o Mateus. <span></span></h1>
+                            <p>
+                                Soluciono seus desafios com criatividade e
+                                eficiência, elevando a experiência do usuário e
+                                fortalecendo a identidade da sua marca.
+                            </p>
+                            <a href="#contact" class="btn">Vamos conversar!</a>
                         </div>
-                        <h1>Oi, sou o Mateus. <span></span></h1>
-                        <p>Soluciono seus desafios com  criatividade e eficiência, elevando a experiência do usuário e  fortalecendo a identidade da sua marca.</p>
-                        <div class="botao">
-                            <button>Vamos conversar!</button>
-                        </div> <!--Texto - Home-->
+                        <div class="hero-img">
+                            <img
+                                src="Banner Home.png"
+                                alt="Ilustração do Mateus Vilela"
+                            />
+                        </div>
                     </div>
-                    <div class="img-foto-home">
-                        <img src="Banner Home.png" alt="Banner Home">
-                    </div> <!--Foto - Home-->
                 </div>
-            </div>
-        </section> <!-- Fim da Home -->
+            </section>
 
-        <section class="trabalhos" id="Trabalhos">
-            <div class="container">
-                <div class="texto-trabalhos">
-                    <div class="pilulas">
-                        <span>Alguns dos meus trabalhos</span>
+            <section class="works" id="works">
+                <div class="container">
+                    <header class="works-header">
+                        <div class="pill">
+                            <span>Alguns dos meus trabalhos</span>
+                        </div>
+                        <h2 class="section-title">
+                            Meus <span>Trabalhos</span>
+                        </h2>
+                        <p>
+                            Fiz uma seleção de projetos que destacam minha
+                            experiência e criatividade nos diversos campos do
+                            design.
+                        </p>
+                    </header>
+
+                    <ul class="behance-projects">
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/188244239/Spider-Man-l-Poster"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Homem-Aranha-No-way-Home---Poster.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Spider Man<span>Poster</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/198058177/Stranger-Things-l-Poster"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Poster Stranger Things.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Stranger Things<span>Poster</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/198879665/Pense-fora-da-caixa-l-Colagem"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Pense fora da caixa.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Pense fora da caixa<span>Poster</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/197873879/Oliveira-Nunes-l-Identidade-Visual"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Oliveira & Nunes - Identidade Visual.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Oliveira & Nunes<span
+                                            >Identidade Visual</span
+                                        >
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/198422851/Oliveira-Nunes-l-Landing-Page"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Oliveira & Nunes - Landing Page.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Oliveira & Nunes<span
+                                            >Landing Page</span
+                                        >
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="https://www.behance.net/gallery/134983205/Spotify-l-Rebranding"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <div
+                                    class="portfolio-item"
+                                    style="
+                                        background-image: url(&quot;Spotify - Rebranding.png&quot;);
+                                    "
+                                >
+                                    <div class="overlay">
+                                        Spotify<span>Rebranding</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="btn">Vamos criar algo novo!</a>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <div class="container">
+                    <div class="pill">
+                        <span>Algumas habilidades</span>
                     </div>
-                    <h1 class="titulo"> Meus <span>Trabalhos<span></h1>
-                    <p>Fiz uma seleção de projetos que destacam minha experiência e criatividade nos diversos campos do design.</p>
+                    <h2 class="section-title">
+                        Minhas <span>skills de design</span>
+                    </h2>
+                    <div class="flex">
+                        <article class="skill-box">
+                            <img
+                                src="Web Design.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <h3>Web Design</h3>
+                            <p>
+                                Crio experiências digitais envolventes para
+                                sites e aplicativos por meio de UX/UI Design.
+                            </p>
+                        </article>
+
+                        <article class="skill-box">
+                            <img
+                                src="Social Media.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <h3>Social Media</h3>
+                            <p>
+                                Vou dar vida para o seu perfil, reforçando o
+                                valor e a alma da sua marca por meio de posts
+                                chamativos.
+                            </p>
+                        </article>
+
+                        <article class="skill-box">
+                            <img
+                                src="Editor de vídeo.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <h3>Editor de vídeo</h3>
+                            <p>
+                                Desenvolvo histórias cativantes e envolventes
+                                por meio de vídeos, trazendo alma para o seu
+                                projeto.
+                            </p>
+                        </article>
+
+                        <article class="skill-box">
+                            <img
+                                src="Brand Design.svg"
+                                alt=""
+                                aria-hidden="true"
+                            />
+                            <h3>Brand Design</h3>
+                            <p>
+                                Darei alma à sua marca com uma identidade visual
+                                única, que conta sua história e cativa seu
+                                público.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="flex">
+                        <img
+                            class="about-img"
+                            src="Foto - Sobre Mim.png"
+                            alt="Foto de Mateus Vilela"
+                        />
+
+                        <article class="about-text">
+                            <h2 class="section-title">
+                                Nice to <span>meet you!</span>
+                            </h2>
+                            <p>
+                                Me chamo Mateus, sou Diretor de Arte Jr. com
+                                mais de 7 anos de experiência em design.
+                            </p>
+                            <p>
+                                Comecei criando vídeos para o YouTube e me
+                                apaixonei pelo design gráfico através das
+                                thumbnails. Desde então, trabalhei em diversos
+                                projetos nos setores de agro, tecnologia,
+                                fitness e mais.
+                            </p>
+                            <p>
+                                Adoro explorar novas técnicas de design, editar
+                                vídeos, criar alguns motions, desenvolver
+                                interfaces de usuário e construir landing pages
+                                e sites. Manipular imagens e criar key visuals
+                                também são minhas paixões.
+                            </p>
+                            <p>
+                                Minha motivação é solucionar problemas com
+                                criatividade e inovação.
+                            </p>
+
+                            <div class="divider"></div>
+
+                            <ul class="qualities">
+                                <li class="pill">
+                                    <img
+                                        src="Explorador.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Explorador</span>
+                                </li>
+                                <li class="pill">
+                                    <img
+                                        src="Aventureiro.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Aventureiro</span>
+                                </li>
+                                <li class="pill">
+                                    <img
+                                        src="Alegre.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Alegre</span>
+                                </li>
+                                <li class="pill">
+                                    <img
+                                        src="Otimista.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Otimista</span>
+                                </li>
+                                <li class="pill">
+                                    <img
+                                        src="Inovador.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Inovador</span>
+                                </li>
+                                <li class="pill">
+                                    <img
+                                        src="Criativo.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                    />
+                                    <span>Criativo</span>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="pill">
+                        <span>Chegou a sua vez</span>
+                    </div>
+                    <h2 class="section-title">
+                        Que tal criarmos um <span>projeto incrível?</span>
+                    </h2>
+                    <p>Clique no botão abaixo e me conte sobre sua ideia!</p>
+                    <a href="#contact" class="btn">Vamos criar algo novo!</a>
                 </div>
 
-                <ul class="behance-projects">
-                    <li>
-                        <a href="https://www.behance.net/gallery/188244239/Spider-Man-l-Poster" target="_blank">
-                            <div class="img-port" style="background-image: url(Homem-Aranha-No-way-Home---Poster.png);">
-                                <div class="overlay">Spider Man<span>Poster</span></div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.behance.net/gallery/198058177/Stranger-Things-l-Poster" target="_blank">
-                            <div class="img-port" style="background-image: url(Poster\ Stranger\ Things.png);">
-                                <div class="overlay">Stranger Things<span>Poster</span></div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.behance.net/gallery/198879665/Pense-fora-da-caixa-l-Colagem" target="_blank">
-                            <div class="img-port" style="background-image: url(Pense\ fora\ da\ caixa.png);">
-                                <div class="overlay">Pense fora da caixa<span>Poster</span></div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.behance.net/gallery/197873879/Oliveira-Nunes-l-Identidade-Visual" target="_blank">
-                            <div class="img-port" style="background-image: url(Oliveira\ &\ Nunes\ -\ Identidade\ Visual.png);">
-                                <div class="overlay">Oliveira & Nunes<span>Identidade Visual</span></div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.behance.net/gallery/198422851/Oliveira-Nunes-l-Landing-Page" target="_blank">
-                            <div class="img-port" style="background-image: url(Oliveira\ &\ Nunes\ -\ Landing\ Page.png);">
-                                <div class="overlay">Oliveira & Nunes<span>Landing Page</span></div>
-                            </div>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.behance.net/gallery/134983205/Spotify-l-Rebranding" target="_blank">
-                            <div class="img-port" style="background-image: url(Spotify\ -\ Rebranding.png);">
-                                <div class="overlay">Spotify<span>Rebranding</span></div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-
-                <div class="botao">
-                    <button>Vamos criar algo novo!</button>
-                </div> <!--Texto - Home-->
-            </div>
-        </section>
-
-        <section class="skills" id="Skills">
-            <div class="container">
-                <div class="pilulas">
-                    <span>Algumas habilidades</span>
-                </div>
-                    <h1 class="titulo"> Minhas <span>skills de design</span></h1>
-                        <div class="flex">
-                            <div class="box-skills">
-                                <img src="Web Design.svg">
-                                <h3>Web Design</h3>
-                                <p>Crio experiências digitais envolventes para sites e aplicativos por meio de UX/UI Design.</p>
-                            </div><!-- skills -->
-
-                            <div class="box-skills">
-                                <img src="Social Media.svg">
-                                <h3>Social Media</h3>
-                                <p>Vou dar vida para o seu perfil, reforçando o valor e a alma da sua marca por meio de posts chamativos.</p>
-                            </div><!-- skills -->
-
-                            <div class="box-skills">
-                                <img src="Editor de vídeo.svg">
-                                <h3>Editor de vídeo</h3>
-                                <p>Desenvolvo histórias cativantes e envolventes por meio de vídeos, trazendo alma para o seu projeto.</p>
-                            </div><!-- skills -->
-
-                            <div class="box-skills">
-                                <img src="Brand Design.svg">
-                                <h3>Brand Design</h3>
-                                <p>Darei alma à sua marca com uma identidade visual única, que conta sua história e cativa seu público.</p>
-                            </div><!-- skills -->
-                        </div><!-- flex -->
-            </div><!-- Container -->
-        </section><!-- Skills -->
-
-        <section class="sobre" id="Sobre">
-            <div class="container">
                 <div class="flex">
-                    <img class="img-sobre" src="Foto - Sobre Mim.png">
+                    <div class="social-links">
+                        <a
+                            href="https://www.linkedin.com/in/vileler/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn"
+                        >
+                            <img src="Linkedin.svg" alt="" />
+                        </a>
 
-                    <div class="txt-sobre">
-                        <h1>Nice to <span>meet you!</span></h1>
-                        <p>Me chamo Mateus, sou Diretor de Arte Jr. com mais de 7 anos de experiência em design.</p>
-                        <p>Comecei criando vídeos para o YouTube e me apaixonei pelo design gráfico através das thumbnails. Desde então, trabalhei em diversos projetos nos setores de agro, tecnologia, fitness e mais.</p>
-                        <p>Adoro explorar novas técnicas de design, editar vídeos, criar alguns motions, desenvolver interfaces de usuário e construir landing pages e sites. Manipular imagens e criar key visuals também são minhas paixões.</p>
-                        <p>Minha motivação é solucionar problemas com criatividade e inovação.</p>
+                        <a
+                            href="https://www.behance.net/vileler"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Behance"
+                        >
+                            <img src="Behance.svg" alt="" />
+                        </a>
 
-                        <div class="linha"></div>
-
-                        <ul class="qualidades">
-                            <li class="pilulas">
-                                <img src="Explorador.svg">
-                                <span>Explorador</span>
-                            </li>
-
-                            <li class="pilulas">
-                                <img src="Aventureiro.svg">
-                                <span>Aventureiro</span>
-                            </li>
-
-                            <li class="pilulas">
-                                <img src="Alegre.svg">
-                                <span>Alegre</span>
-                            </li>
-
-                            <li class="pilulas">
-                                <img src="Otimista.svg">
-                                <span>Otimista</span>
-                            </li>
-
-                            <li class="pilulas">
-                                <img src="Inovador.svg">
-                                <span>Inovador</span>
-                            </li>
-
-                            <li class="pilulas">
-                                <img src="Criativo.svg">
-                                <span>Criativo</span>
-                            </li>
-                        </ul>
+                        <a
+                            href="https://www.instagram.com/vileler/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="Instagram"
+                        >
+                            <img src="Instagram.svg" alt="" />
+                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
 
-    <footer id="Contato">
-        <div class="container">
-            <div class="texto-footer">
-                <div class="pilulas">
-                    <span>Chegou a sua vez</span>
-                </div>
-                <h1>Que tal criarmos um <span>projeto incrível?</span></h1>
-                <p>Clique no botão abaixo e me conte sobre sua ideia!</p>
-            </div>
-
-            <div class="botao">
-                <button>Vamos criar algo novo!</button>
-            </div> <!--Texto - Home-->
-
-            <div class="flex">
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/vileler/" target="_blank">
-                        <button><img src="Linkedin.svg"></button>
-                    </a>
-
-                    <a href="https://www.behance.net/vileler" target="_blank">
-                        <button><img src="Behance.svg"></button>
-                    </a>
-
-                    <a href="https://www.instagram.com/vileler/" target="_blank">
-                        <button><img src="Instagram.svg"></button>
-                    </a>
+                <div class="copyright-info">
+                    <p class="h1-style">
+                        Coded, designed & written by Mateus Viela.
+                    </p>
+                    <p>© Mateus Vilela - Todos os direitos reservados - 2024</p>
                 </div>
             </div>
-
-            <div class="texto-direitos">
-                <h1>Coded, designed & written by Mateus Viela.</h1>
-                <p>© Mateus Vilela - Todos os direitos reservados - 2024</p>
-            </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>

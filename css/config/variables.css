@@ -1,0 +1,22 @@
+:root {
+    /* Main Colors */
+    --primary-color: #e61484;
+    --secondary-color: #292d29;
+
+    /* Text Colors */
+    --text-dark: #292d29;
+    --text-muted: #292d29ad;
+    --text-light: #292d2998;
+    --text-extra-light: #292d2971;
+    --text-white: #ffffff;
+
+    /* UI Elements */
+    --bg-white: #ffffff;
+    --bg-overlay: rgba(0, 0, 0, 0.5);
+    --border-light: #f0f0f0;
+    --nav-link: rgb(163, 163, 163);
+
+    /* Shadows and Accents */
+    --shadow-thin: rgba(0, 0, 0, 0.18);
+    --shadow-soft: rgba(0, 0, 0, 0.1);
+}
