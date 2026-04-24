@@ -1,0 +1,138 @@
+.header {
+    background-color: var(--bg-white);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 0 0.5px 0 var(--shadow-thin);
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hamburger button */
+
+.nav-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    padding: 8px;
+    list-style: none;
+}
+
+.nav-toggle::-webkit-details-marker {
+    display: none;
+}
+
+.nav-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+
+/* Mobile: nav hidden by default, shown when trigger is open */
+
+.nav-menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-white);
+    box-shadow: 0 4px 12px var(--shadow-soft);
+    z-index: 10;
+}
+
+.nav-trigger[open] + .nav-menu {
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 5%;
+    gap: 4px;
+}
+
+.nav-menu a {
+    display: block;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.nav-menu ul li:last-child a {
+    border-bottom: none;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-color);
+}
+
+@media (min-width: 768px) {
+    /* Hide hamburger, always show nav */
+    .nav-trigger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        align-items: center;
+        position: static;
+        box-shadow: none;
+        background: transparent;
+        width: auto;
+    }
+
+    .nav-menu ul {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        gap: 0;
+    }
+
+    .nav-menu a {
+        font-size: 0.875rem;
+        color: var(--nav-link);
+        padding: 0 50px 0 0;
+        border-bottom: none;
+        position: relative;
+    }
+
+    .nav-menu a:hover {
+        color: var(--text-dark);
+        font-weight: 400;
+    }
+
+    .nav-menu a::after {
+        content: "";
+        width: 0%;
+        height: 4px;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        transition: width 0.5s ease-in-out;
+        border-radius: 8px;
+    }
+
+    .nav-menu a:hover::after {
+        width: 60%;
+    }
+}

@@ -1,0 +1,76 @@
+section.about .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-text {
+    width: 100%;
+}
+
+.about-text p {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.about-img {
+    margin-inline: auto;
+}
+
+.qualities {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.qualities .pill {
+    border-color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+.qualities .pill span {
+    color: var(--text-dark);
+    font-size: 1.125rem;
+}
+
+.qualities .pill img {
+    margin-right: 10px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .about-text {
+        width: 55%;
+    }
+
+    .about-img {
+        width: auto;
+        margin-inline: 0;
+    }
+
+    .qualities {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    section.about .flex {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-text p {
+        max-width: 90%;
+        text-align: left;
+    }
+}
